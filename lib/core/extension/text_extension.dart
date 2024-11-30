@@ -50,8 +50,12 @@ extension TextThemeExtension on BuildContext {
       textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w500);
   TextStyle? get f20400 =>
       textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w400);
-
-  TextStyle? get f18600 => textTheme.titleMedium;
+  TextStyle? get f18400 => textTheme.titleMedium!.copyWith(
+        fontWeight: FontWeight.w400,
+      );
+  TextStyle? get f18600 => textTheme.titleMedium!.copyWith(
+        fontWeight: FontWeight.w600,
+      );
   TextStyle? get f18700 => textTheme.titleMedium!.copyWith(
         fontWeight: FontWeight.w700,
       );

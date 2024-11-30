@@ -1,7 +1,5 @@
+import 'package:chat_app/features/onboarding/view/onboarding_screen.dart';
 import 'package:flutter/material.dart';
-
-import '../../features/auth/view/screen/login_screen.dart';
-import '../../features/auth/view/screen/register_screen.dart';
 
 class AppPages {
   static const onboarding = '/';
@@ -15,6 +13,5 @@ class AppPages {
 }
 
 Map<String, Widget Function(BuildContext)> routes = {
-  AppPages.register: (context) => const RegisterScreen(),
-
+  AppPages.onboarding: (context) => const OnboardingScreen(),
 };
