@@ -12,7 +12,7 @@ class AppColors {
   static Color lightPrimaryColor = const Color(0xffB3CBF0).withOpacity(0.15);
   static const Color whiteColor = Color(0xffFFFFFF);
   static const Color blackColor = Color(0xff00070D);
-  static const Color offWhite = Color(0xff545454);
+  static const Color offWhite = Color(0xffF3FAFA);
   static const Color textLightGreyColor = Color(0xffB0B0B0);
   static const Color textDarkGreyColor = Color(0xffE8E8E8);
   static const Color navigationUnSelected = Color(0xff8C8C8C);

@@ -10,3 +10,4 @@ double width(context) =>
     MediaQuery.sizeOf(context).width; //MediaQuery(data: data, child: child)
 double height(context) =>
     MediaQuery.sizeOf(context).height; //MediaQuery(data: data, child: child)
+bool isTablet(context) => width(context) > 650;
