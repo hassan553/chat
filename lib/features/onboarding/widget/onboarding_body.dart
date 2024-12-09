@@ -1,4 +1,5 @@
 import 'package:chat_app/core/constants/app_consts.dart';
+import 'package:chat_app/core/extension/navigation_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:chat_app/components/custom_image_handler.dart';
 import 'package:chat_app/core/extension/text_extension.dart';
@@ -6,6 +7,8 @@ import 'package:chat_app/core/utils/app_colors.dart';
 import 'package:chat_app/core/utils/app_images.dart';
 import 'package:chat_app/features/onboarding/widget/sign_up_option_widget.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../core/routes/app_pages.dart';
 
 class OnboardingBody extends StatelessWidget {
   const OnboardingBody({super.key});
@@ -72,9 +75,12 @@ class OnboardingBody extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text('Already have an account?', style: context.f20400),
-                Text('Sign In',
-                    style: context.f20400!
-                        .copyWith(color: AppColors.primaryColor)),
+                GestureDetector(
+                  onTap: () => context.navigateToPage(AppPages.login),
+                  child: Text('Sign In',
+                      style: context.f20400!
+                          .copyWith(color: AppColors.primaryColor)),
+                ),
               ],
             ),
           ),

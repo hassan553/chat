@@ -1,3 +1,5 @@
+import 'package:chat_app/features/auth/view/screen/login_screen.dart';
+import 'package:chat_app/features/auth/view/screen/register_screen.dart';
 import 'package:chat_app/features/home/view/screen/chat_details_screen.dart';
 import 'package:chat_app/features/home/view/screen/home_screen.dart';
 import 'package:chat_app/features/onboarding/view/onboarding_screen.dart';
@@ -16,6 +18,8 @@ class AppPages {
 
 Map<String, Widget Function(BuildContext)> routes = {
   AppPages.onboarding: (context) => const OnboardingScreen(),
+  AppPages.login: (context) => const LoginScreen(),
+  AppPages.register: (context) => const RegisterScreen(),
   AppPages.home: (context) => const HomeScreen(),
   AppPages.chatDetails: (context) => const ChatDetailsScreen(),
 };

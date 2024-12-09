@@ -54,6 +54,7 @@ class ChatDetailsScreen extends StatelessWidget {
                   CallItemWidget(
                     icon: Icons.call,
                     onTap: () {},
+                    
                   ),
                   SizedBox(width: 5.w),
                   CallItemWidget(
