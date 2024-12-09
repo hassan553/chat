@@ -54,6 +54,7 @@ class TextFieldComponent extends StatefulWidget {
   final int? maxlines, maxLength;
   final TextAlign textAlign;
   final Color? borderColor;
+
   final List<TextInputFormatter> inputFormatters;
   @override
   State<TextFieldComponent> createState() => _TextFieldComponentState();
