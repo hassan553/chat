@@ -82,7 +82,9 @@ class _LoginScreenState extends State<LoginScreen> {
                       firstChild: CustomButton(
                           text: 'login',
                           color: AppColors.whiteColor,
-                          onTap: () {}),
+                          onTap: () {
+                            context.navigateToAndReplacement(AppPages.home);
+                          }),
                       secondChild: const CustomLoader(),
                       crossFadeState: false
                           ? CrossFadeState.showSecond

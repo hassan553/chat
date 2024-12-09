@@ -91,9 +91,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   SizedBox(height: 40.h),
                   AnimatedCrossFade(
                       firstChild: CustomButton(
-                          text: 'login',
+                          text: 'register',
                           color: AppColors.whiteColor,
-                          onTap: () {}),
+                          onTap: () {
+                            context.navigateToAndReplacement(AppPages.home);
+                          }),
                       secondChild: const CustomLoader(),
                       crossFadeState: false
                           ? CrossFadeState.showSecond
@@ -108,7 +110,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           style: context.f14400!
                               .copyWith(color: AppColors.bgGrey)),
                       InkWell(
-                        onTap: () => context.navigateToAndReplacement(AppPages.login),
+                        onTap: () =>
+                            context.navigateToAndReplacement(AppPages.login),
                         child: Text('Sign In',
                             style: context.f14400!
                                 .copyWith(color: AppColors.primaryColor)),
